@@ -12,8 +12,9 @@ library("ggplot2")
 data <- 1:500
 
 newFunction <- function(data, x, y, color, title = "Title", xtitle = "X Title", ytitle = "Y Title") {
-  usa.map <- ggplot(data) +
+  map <- ggplot(data) +
     labs(title = title, 
          x = xtitle, 
          y = ytitle)
+  return(map)
 }
